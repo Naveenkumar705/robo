@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .robo{
+            height: 450px;
+            width: 500px;
+            border: 1px solid black;
+            position: relative;
+            left: 150px;
+            background-color: lightgreen;
+
+        }
+        .body{
+            height: 200px;
+            width: 100px;
+            border: 1px solid black;
+            position:relative;
+            left: 170px;
+            top: 10px;
+            
+            animation-name: body;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;
+            border-radius:100px ;
+            background: linear-gradient(blue,green);
+            
+        }
+        
+        .face{
+            height: 100px;
+            width: 90px;
+            border-radius: 100px;
+            border: 1px solid black;
+            align-items: center; 
+            position: relative;
+            left: 170px;
+            top: 10px; 
+            background: linear-gradient(yellow, orange);
+            animation-name: face;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+            border-radius: 100px; 
+        }
+        @keyframes face{
+            10%{
+                background-color:gray;
+                background: linear-gradient(orange, yellow);
+            }
+    
+        }
+        .reye{
+            height: 10px;
+            width: 10px;
+            border: 1px solid black;
+            border-radius: 100px;
+            position: relative;
+            left: 190px;
+            bottom: 250px;
+            background: linear-gradient(blue,orange);
+        }
+        .leye{
+            height: 10px;
+            width: 10px;
+            border: 1px solid black;
+            border-radius: 100px;
+            position: relative;
+            left: 240px;
+            bottom: 260px;
+            background: linear-gradient(blue,orange);
+        }
+        .rh{
+            height: 80px;
+            width: 15px;
+            border: 1px solid black;
+            position: relative;
+            left: 145px;
+            bottom: 190px;
+            border-radius: 10px;
+            animation-name: rh;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rh{
+            0%{
+                transform: rotate(20deg);
+                background:linear-gradient(red,orange) 
+            }
+            25%{
+                transform: rotate(60deg);
+                background:linear-gradient(red,orange)
+            }
+            100%{
+                transform: rotate(0deg);
+                background:linear-gradient(red,orange)
+            }
+        }
+        .lh{
+            height: 80px;
+            width: 15px;
+            border: 1px solid black;
+            position: relative;
+            left: 280px;
+            bottom: 270px;
+            border-radius: 10px;
+            animation-name: lh;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes lh{
+            0%{
+                transform: rotate(-20deg);
+                background:linear-gradient(red,orange) 
+            }
+            25%{
+                transform: rotate(-60deg);
+                background:linear-gradient(red,orange)
+            }
+            100%{
+                transform: rotate(-0deg);
+                background:linear-gradient(red,orange)
+            }
+        }
+        .rleg{
+            height: 80px;
+            width: 15px;
+            border: 1px solid black;
+            position: relative;
+            left: 170px;
+            bottom: 280px;
+            border-radius: 10px;
+            animation-name: rleg;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rleg{
+            0%{
+                transform: rotate(-20deg);
+                background:linear-gradient(red,orange) 
+            }
+            25%{
+                transform: rotate(-60deg);
+                background:linear-gradient(red,orange)
+            }
+            100%{
+                transform: rotate(-0deg);
+                background:linear-gradient(red,orange)
+            }
+        }
+        .lleg{
+            height: 80px;
+            width: 15px;
+            border: 1px solid black;
+            position: relative;
+            left: 250px;
+            bottom: 195px;
+            border-radius: 10px;
+            animation-name: lleg;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes lleg{
+            0%{
+                transform: rotate(-20deg);
+                background:linear-gradient(red,orange) 
+            }
+            25%{
+                transform: rotate(-60deg);
+                background:linear-gradient(red,orange)
+            }
+            100%{
+                transform: rotate(-0deg);
+                background:linear-gradient(red,orange)
+            }
+        }
+        .h{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h"><b>Dancing robot</b></h1>
+    <div class="robo">
+        <div class="face"></div>
+        <div class="body"></div>
+        <div class="reye"></div>
+        <div class="leye"></div>
+        <div class="rh"></div>
+        <div class="lh"></div>
+        <div class="lleg"></div>
+        <div class="rleg"></div>
+    </div>
+</body>
+</html>
